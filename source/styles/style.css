@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.header {
+    background-color: #ddd;
+    color: #111;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .menu-button {
+    color: #111;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: 0.3s;
+    margin: auto;
+    text-decoration: none;
+    border-bottom: 0.08em solid #000;
+}
+
+.header .menu-button:hover {
+    color: #666;
+    border-bottom: 0.08em solid #666;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+}
+
+.header h1 {
+    font-size: 1.5em;
+    margin: 0.4em 0.8em 0.4em 0;
+    border: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header .left-button {
+    background-color: #111;
+    color: #fafafa;
+    border: none;
+    padding: 0.4em 0.8em 0.4em 0.4em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+
+.header .left-button:hover {
+    color: #111;
+    background-color: #aaa;
+}
+
+.header .tag {
+    color: #666;
+}
+
+.sidenav {
+    height: 100%;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
+    width: 0;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 3em;
+    margin-bottom: 3em;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #BBB;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .card {
+    margin: 1em auto;
+    background-color: #222;
+    text-decoration: none;
+    border-radius: 0.7em;
+    display: block;
+    cursor: pointer;
+    padding: 0.2em;
+    width: 15em;
+    transition: 0.3s;
+    line-height: 0;
+}
+
+.sidenav .card:hover {
+    color: #FFF;
+    background-color: #333;
+}
+
+.sidenav .card img {
+    width: 100%;
+    object-fit: cover;
+    height: 8em;
+    border-radius: 0.5em;
+}
+
+.sidenav .card h4 {
+    margin: 0 0.1em 0.2em 0.1em;
+    font-size: 1.5em;
+}
+
+.sidenav .card:hover {
+    color: #f1f1f1;
+    box-shadow: 0 0 0.5em rgba(136, 136, 136, 0.3);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    margin: 2em;
+    text-align: center;
+}
+
+.card-grid a {
+    padding: 1em;
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #BBB;
+    display: block;
+    transition: 0.3s;
+}
+
+.card-grid .card {
+    margin: 1em auto;
+    background-color: #222;
+    text-decoration: none;
+    border-radius: 0.8em;
+    display: block;
+    cursor: pointer;
+    padding: 0.3em;
+    transition: 0.3s;
+    line-height: 0;
+}
+
+.card-grid .card:hover {
+    background-color: #333;
+    color: #FFF;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
+}
+
+.card-grid .card img {
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+    border-radius: 0.5em;
+}
+
+.card-grid .card h4 {
+    margin: 0.1em;
+    margin-bottom: 0.2em;
+    font-size: 1.5em;
+}
+
+.card-grid .card:hover {
+    color: #f1f1f1;
+}

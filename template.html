@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Barning - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles/md_style.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <span class="left-button" onclick="openNav()">&#9776; other</span>
+        <a class="menu-button" href="https://www.linkedin.com/" target="_blank" alt="linkedin Button">
+            <i class="fa fa-linkedin-square"> linkedin</i>
+        </a>
+        <h1><span class="tag">Portfolio of </span>Your name here</h1>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="card" href="index.html">
+            <h4>Home</h4>
+        </a>
+        {menu-item}
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div class="content">
+        {content}
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "15em";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>
